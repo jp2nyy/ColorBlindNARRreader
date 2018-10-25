@@ -162,10 +162,10 @@ hh = sys.argv[2]
 type = sys.argv[3]
 
 # Below modifies the URL to the NARR data using the date/time information supplied by the user.
-narr_path = 'http://nomads.ncdc.noaa.gov/thredds/dodsC/narr-a/YYYYMM/YYYYMMDD/narr-a_221_YYYYMMDD_HH00_000.grb'
-narr_path = narr_path.replace('YYYYMMDD', yyyymmdd)
-narr_path = narr_path.replace('YYYYMM', yyyymmdd[:6])
-narr_path = narr_path.replace('HH', hh)
+narr_path = 'https://nomads.ncdc.noaa.gov/data/narr/201104/20110423/narr-a_221_20110423_1200_000.grb'
+# narr_path = narr_path.replace('YYYYMMDD', yyyymmdd)
+# narr_path = narr_path.replace('YYYYMM', yyyymmdd[:6])
+# narr_path = narr_path.replace('HH', hh)
 
 # Print out the path created
 print "Here is the path to the NARR data:", narr_path
